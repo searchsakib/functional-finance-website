@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functioanl Financial Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#121c32',
+            },
+          },
+        },
+      };
+    </script>
+    <!-- <style>
+      h2 {
+        color: #121c32;
+      }
+    </style> -->
+  </head>
+  <body class="bg-clifford">
+    <header>
+      <h1 class="text-5xl text-center mt-4 text-white">
+        Functioanl <span class="text-rose-500 font-medium">Finance</span>
+      </h1>
+    </header>
+    <main>
+      <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+          <div class="bg-amber-500 p-8 rounded-md">
+            <h4 class="3xl">Deposit</h4>
+            <h2 class="text-5xl font-medium">
+              $<span id="deposit-total">00</span>
+            </h2>
+          </div>
+          <div class="bg-red-500 p-8 rounded-md">
+            <h4 class="3xl">Withdraw</h4>
+            <h2 class="text-5xl font-medium">
+              $<span id="withdraw-total">00</span>
+            </h2>
+          </div>
+          <div class="bg-sky-500 p-8 rounded-md">
+            <h4 class="3xl">Balance</h4>
+            <h2 class="text-5xl font-medium">
+              $<span id="balance-total">1240</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
