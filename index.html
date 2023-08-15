@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Functioanl Financial Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/deposit.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -68,6 +69,21 @@
               class="bg-blue-800 px-6 py-2 text-white font-medium rounded-md hover:bg-blue-600 mt-4"
             >
               Deposit
+            </button>
+          </div>
+          <div class="bg-teal-500 p-8 rounded-md">
+            <h3 class="text-4xl text-white mb-4">Please Withdraw</h3>
+            <input
+              class="w-3/4 px-4 py-3 rounded block"
+              type="number"
+              min="1"
+              placeholder="$ amount you want to withdraw"
+            />
+            <button
+              id="btn-withdraw"
+              class="bg-blue-800 px-6 py-2 text-white font-medium rounded-md hover:bg-blue-600 mt-4"
+            >
+              Withdraw
             </button>
           </div>
         </div>
