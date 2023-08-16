@@ -13,8 +13,15 @@ function getElementValueById(elmentId) {
   return textElementValue;
 }
 
+function setTextElementValueById(elementId, newValue) {
+  const textElement = document.getElementById(elementId);
+  textElement.innerText = newValue;
+}
+
 document.getElementById('btn-deposit').addEventListener('click', () => {
   const newDepositAmount = getInputFieldValueById('deposit-field');
   const previousDepositTotal = getElementValueById('deposit-total');
   const newDepositTotal = previousDepositTotal + newDepositAmount;
+
+  setTextElementValueById('deposit-total', newDepositTotal);
 });
